@@ -1,0 +1,447 @@
+<!doctype html>
+<html class="no-js" lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>afoeder.me — That's me</title>
+
+  <style type="text/css">
+    body {
+      font-family: "pt-serif",serif;
+      margin:40px auto;
+      max-width:650px;
+      line-height:1.6;
+      font-size: 18px;
+      color: #424242;
+      padding:0 10px;
+      background-color: #fafafa;
+    }
+    a svg.svg-inline--fa { color: #424242; }
+    a svg.fa-linkedin { color: #0077b5; }
+    h1,h2,h3 {
+      line-height:1.2;
+    }
+    h4 {
+      font-size: 1em;
+      line-height:1.2;
+      margin: 0 0 .5em 0;
+    }
+    h2 small {
+      font-size: 0.6em;
+    }
+    blockquote {
+      position: relative;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    blockquote::before {
+      content: "»";
+      font-size: 85px;
+      position: absolute;
+      top: -75px;
+      left: -48px;
+      color:lightgray;
+    }
+    section h2 small {
+      white-space: nowrap;
+      line-height: 2em;
+    }
+    section#skills ul {
+      padding: 0;
+      margin: 0;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      justify-content: left;
+      list-style: none;
+    }
+    section#skills ul li {
+      background-color: white;
+      width: 49%;
+      width: calc(50% - 4px);
+      height: 142px;
+      margin: 2px;
+      line-height: 150px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media screen and (min-width: 520px) {
+      section#skills ul li {
+        width: 32%;
+        width: calc(33% - 6px);
+      }
+    }
+    section#skills ul li a {
+      display: inline-flex;
+    }
+    section#skills ul li a:hover {
+      animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+    }
+
+    /*section#professional-career h4 {
+
+    }*/
+    section#professional-career dd {
+      margin-bottom: 1em;
+    }
+    section#skills h2 small::before,
+    section#exlibris h2 small::before {
+      content: "— ";
+    }
+    section#exlibris ul {
+      margin: 0; padding: 0; overflow: hidden;
+    }
+    section#exlibris li {
+      overflow: hidden;
+      margin-bottom: 1.5em;
+    }
+    section#exlibris li figure {
+      float:left;
+      margin: 0 .8em 0 0;
+    }
+    section#exlibris li figure small {
+      font-size: small;
+      color:lightgray;
+    }
+    section#exlibris li figure img {
+      min-height: 160px;
+    }
+
+    @media screen and (min-width: 590px) {
+      section#exlibris li {
+        width: 50%;
+        float: left;
+      }
+      section#exlibris li:nth-child(odd) {
+        clear: left;
+      }
+    }
+
+    @keyframes shake {
+      10%, 90% {
+        transform: translate3d(-1px, 0, 0) rotate(-1deg);
+      }
+      20%, 80% {
+        transform: translate3d(2px, 0, 0) rotate(2deg);
+      }
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0) rotate(-4deg);
+      }
+      40%, 60% {
+        transform: translate3d(4px, 0, 0) rotate(4deg);
+      }
+    }
+  </style>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--
+    <link rel="preload" href="styles/site.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/site.css"></noscript>
+    <script>
+    /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+    !function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var t;try{t=e.document.createElement("link").relList.supports("preload")}catch(e){t=!1}return function(){return t}}(),e.bindMediaToggle=function(t){function e(){t.media=a}var a=t.media||"all";t.addEventListener?t.addEventListener("load",e):t.attachEvent&&t.attachEvent("onload",e),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(e,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+    </script>
+  -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+
+<main itemprop="mainEntity" itemscope itemtype="http://schema.org/Person">
+
+  <h1>Ich bin's, <em>afoeder</em>.</h1>
+  <p>Software-Architekt. Von schneller Auffassungsgabe, mit Blick fürs&nbsp;Detail wie fürs&nbsp;Große&nbsp;Ganze.</p>
+  <blockquote>Einfach halten!</blockquote>
+  <p>Seit 6 vor der Tastatur,
+    <a href="https://web.archive.org/web/19990821063307/http://www.gbg.wn.schule-bw.de:80/ag_onlin.htm">gestalte das Web seit Ende der 90er</a>.</p>
+  <p>Ich bin häufiger und aktiver Open-Source-Contributor
+    <a href="https://github.com/afoeder"><i class="fab fa-github-square"></i></a>
+    und stets mit dem Ohr am Gleis der technischen Entwicklung.</p>
+  <p>Hypermedia- und Semantik-Liebhaber.</p>
+
+  <section>
+
+    <h2>Überblick</h2>
+
+    <dl>
+      <dt>Name</dt>
+      <dd><span itemprop="givenName">Adrian</span> <span itemprop="familyName">Föder</span></dd>
+      <dt>Wohnort</dt>
+      <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <!--<span itemprop="streetAddress">Gottlob-Ernst-Str. 12</span>,
+        <span itemprop="postalCode">71404</span>-->
+        <span itemprop="addressLocality">Korb</span></dd>
+      <dt>Staatsangehörigkeit</dt>
+      <dd itemprop="nationality">DE 🇩🇪</dd>
+      <dt>Geburtsdatum</dt>
+      <dd><span itemprop="birthDate" content="1984-05-30">30. Mai 1984</span>
+        in <span itemprop="birthPlace">Oelsnitz/Vogtl.</span></dd>
+      <dt>Familienstand</dt>
+      <dd>verheiratet 👫</dd>
+      <dt>Kinder</dt>
+      <dd>eine Tochter, nicht im Haushalt lebend</dd>
+    </dl>
+  </section>
+
+  <section id="skills">
+    <h2>Skills und Tools <small>damit kenne ich mich aus!</small></h2>
+
+    <ul>
+      <li><!-- JIRA -->
+        <svg style="height:19px;" role="img" aria-label="JIRA-Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 583.68 75.76"><defs><style>.cls-1{fill:#253858;}.cls-2{fill:#2684ff;}.cls-3{fill:url(#linear-gradient);}.cls-4{fill:url(#linear-gradient-2);}</style><linearGradient id="linear-gradient" x1="34.64" y1="15.35" x2="19" y2="30.99" gradientUnits="userSpaceOnUse"><stop offset="0.18" stop-color="#0052cc"/><stop offset="1" stop-color="#2684ff"/></linearGradient><linearGradient id="linear-gradient-2" x1="38.78" y1="60.28" x2="54.39" y2="44.67" xlink:href="#linear-gradient"/></defs><title>Jira Software-blue</title><g id="Layer_2" data-name="Layer 2"><g id="Blue"><path class="cls-1" d="M109.28,9h7.92V49.2c0,10.65-4.66,18-15.58,18a28.14,28.14,0,0,1-9.5-1.5V58a22.19,22.19,0,0,0,8.18,1.5c6.69,0,9-4,9-9.77Z"/><path class="cls-1" d="M131.63,5.91a4.94,4.94,0,0,1,5.28,5.28,5.28,5.28,0,1,1-10.56,0A4.94,4.94,0,0,1,131.63,5.91Zm-3.87,16.9h7.57v44h-7.57Z"/><path class="cls-1" d="M146.76,22.8h7.39v7.74c2.55-5.19,7-8.89,15.58-8.36v7.39c-9.68-1-15.58,1.94-15.58,11.26v26h-7.39Z"/><path class="cls-1" d="M205.19,58.88c-2.82,5.81-8.1,8.8-14.87,8.8-11.7,0-17.6-9.94-17.6-22.88,0-12.41,6.16-22.88,18.48-22.88,6.42,0,11.35,2.9,14,8.62V22.8h7.57v44h-7.57Zm-12.85,1.76c6.78,0,12.85-4.31,12.85-14.08V43c0-9.77-5.54-14.08-12-14.08-8.54,0-12.94,5.63-12.94,15.84C180.29,55.36,184.51,60.64,192.35,60.64Z"/><path class="cls-1" d="M257.55,67.68c-11.18,0-16.37-2.2-20.86-4.49V55.1c5.37,2.82,13.64,4.84,21.29,4.84,8.71,0,12-3.43,12-8.54s-3.17-7.83-14.17-10.47c-13-3.17-18.83-7.66-18.83-17.16,0-9,6.86-15.66,20.33-15.66,8.36,0,13.73,2,17.69,4.22v7.92a35.52,35.52,0,0,0-18-4.4c-7.57,0-12.06,2.64-12.06,7.92,0,4.75,3.7,7.13,13.9,9.68,12.23,3.08,19.1,7,19.1,17.42C277.88,60.9,271.9,67.68,257.55,67.68Z"/><path class="cls-1" d="M284.57,44.71c0-13.2,7.74-22.79,20.94-22.79s20.77,9.59,20.77,22.79-7.66,23-20.77,23S284.57,57.91,284.57,44.71Zm7.39,0c0,8.36,4.14,15.93,13.55,15.93s13.38-7.57,13.38-15.93S314.84,29,305.51,29,292,36.35,292,44.71Z"/><path class="cls-1" d="M345.55,22.8H356.9v7H345.55v37h-7.39v-37H331v-7h7.13V18c0-8.18,4.58-13.73,14-13.73a18.19,18.19,0,0,1,5.1.7v7a25,25,0,0,0-4.75-.44c-4.66,0-7,2.73-7,6.69Z"/><path class="cls-1" d="M382.51,59.41a24,24,0,0,0,4.75-.62v7.3a18.15,18.15,0,0,1-5.1.7c-9.42,0-14-5.54-14-13.73V29.84H361v-7h7.13V13.47h7.39V22.8h11.7v7h-11.7V52.9C375.56,56.77,377.85,59.41,382.51,59.41Z"/><path class="cls-1" d="M389.38,22.8h8.36l12.67,37.31L423.25,22.8h7.22l12.85,37.31L456,22.8h8.36l-16.19,44h-9.68l-7.57-21.29-4-13.55-4,13.55L415.25,66.8h-9.68Z"/><path class="cls-1" d="M498.93,58.88c-2.82,5.81-8.1,8.8-14.87,8.8-11.7,0-17.6-9.94-17.6-22.88,0-12.41,6.16-22.88,18.48-22.88,6.42,0,11.35,2.9,14,8.62V22.8h7.57v44h-7.57Zm-12.85,1.76c6.78,0,12.85-4.31,12.85-14.08V43c0-9.77-5.54-14.08-12-14.08C478.43,29,474,34.59,474,44.8,474,55.36,478.25,60.64,486.09,60.64Z"/><path class="cls-1" d="M517.94,22.8h7.39v7.74c2.55-5.19,7-8.89,15.58-8.36v7.39c-9.68-1-15.58,1.94-15.58,11.26v26h-7.39Z"/><path class="cls-1" d="M567.57,67.68c-16.46,0-23.67-9.5-23.67-23,0-13.29,7.39-22.79,20.77-22.79,13.55,0,19,9.42,19,22.79v3.43H551.56c1.06,7.48,5.9,12.32,16.28,12.32a39,39,0,0,0,13.38-2.38v7C577.61,67,572.06,67.68,567.57,67.68Zm-16.1-26H576c-.44-8.18-4.14-12.85-11.7-12.85C556.31,28.79,552.26,34,551.47,41.63Z"/><path class="cls-2" d="M72.4,35.76,39.8,3.16,36.64,0h0L12.1,24.54h0L.88,35.76A3,3,0,0,0,.88,40L23.3,62.42,36.64,75.76,61.18,51.22l.38-.38L72.4,40A3,3,0,0,0,72.4,35.76ZM36.64,49.08l-11.2-11.2,11.2-11.2,11.2,11.2Z"/><path class="cls-3" d="M36.64,26.68A18.86,18.86,0,0,1,36.56.09L12.05,24.59,25.39,37.93,36.64,26.68Z"/><path class="cls-4" d="M47.87,37.85,36.64,49.08a18.86,18.86,0,0,1,0,26.68h0L61.21,51.19Z"/></g></g></svg>
+      </li>
+      <li><!-- Confluence -->
+        <svg style="height:17px;" role="img" aria-label="Confluence-Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 510.31 63.83"><defs><style>.cls-1{fill:#253858;}.cls-2{fill:url(#linear-gradient);}.cls-3{fill:url(#linear-gradient-2);}</style><linearGradient id="linear-gradient" x1="59.68" y1="67.65" x2="20.35" y2="45.05" gradientUnits="userSpaceOnUse"><stop offset="0.18" stop-color="#0052cc"/><stop offset="1" stop-color="#2684ff"/></linearGradient><linearGradient id="linear-gradient-2" x1="279.76" y1="-1616.34" x2="240.42" y2="-1638.95" gradientTransform="translate(282.83 -1616.71) rotate(180)" xlink:href="#linear-gradient"/></defs><title>Confluence-blue</title><g id="Layer_2" data-name="Layer 2"><g id="Blue"><path class="cls-1" d="M134.47,60c-3.61,2.38-9.33,3.43-15.31,3.43-19,0-29.74-11.44-29.74-29.65,0-17.6,10.74-29.92,29.57-29.92,5.63,0,11.26,1.06,15.4,4v7.66c-4.14-2.64-8.71-4-15.4-4-13.55,0-21.65,9-21.65,22.26s8.36,22.09,22.09,22.09a32.46,32.46,0,0,0,15-3.52Z"/><path class="cls-1" d="M140,40.48c0-13.2,7.74-22.79,20.94-22.79s20.77,9.59,20.77,22.79-7.66,23-20.77,23S140,53.68,140,40.48Zm7.39,0c0,8.36,4.14,15.93,13.55,15.93s13.38-7.57,13.38-15.93-4-15.75-13.37-15.75S147.41,32.12,147.41,40.48Z"/><path class="cls-1" d="M227.93,62.57h-7.57V36c0-7.92-3.17-11.44-10.38-11.44-7,0-11.88,4.66-11.88,13.55V62.57h-7.57v-44h7.57v7.22a15.42,15.42,0,0,1,13.9-8.1c10.12,0,15.93,7,15.93,19.1Z"/><path class="cls-1" d="M249,18.57h11.35v7H249v37h-7.39v-37h-7.13v-7h7.13V13.73c0-8.18,4.58-13.73,14-13.73a18.19,18.19,0,0,1,5.1.7v7a25,25,0,0,0-4.75-.44c-4.66,0-7,2.73-7,6.69Z"/><path class="cls-1" d="M280.29,62.83c-7.22,0-11.79-3.43-11.79-11.53V.18h7.57V50.42c0,4,2.64,5.37,5.9,5.37a19.17,19.17,0,0,0,2.2-.09v6.78A16.11,16.11,0,0,1,280.29,62.83Z"/><path class="cls-1" d="M290.58,18.57h7.57V45.14c0,7.92,3.17,11.44,10.38,11.44,7,0,11.88-4.66,11.88-13.55V18.57H328v44h-7.57V55.35a15.42,15.42,0,0,1-13.9,8.1c-10.12,0-15.93-7-15.93-19.09Z"/><path class="cls-1" d="M360.45,63.45c-16.46,0-23.67-9.5-23.67-23,0-13.29,7.39-22.79,20.77-22.79,13.55,0,19,9.42,19,22.79v3.43H344.44c1.06,7.48,5.9,12.32,16.28,12.32a39,39,0,0,0,13.38-2.38v7C370.48,62.74,364.94,63.45,360.45,63.45Zm-16.1-26H368.9c-.44-8.18-4.14-12.85-11.7-12.85C349.19,24.55,345.14,29.74,344.35,37.4Z"/><path class="cls-1" d="M422.93,62.57h-7.57V36c0-7.92-3.17-11.44-10.38-11.44-7,0-11.88,4.66-11.88,13.55V62.57h-7.57v-44h7.57v7.22a15.42,15.42,0,0,1,13.9-8.1c10.12,0,15.93,7,15.93,19.1Z"/><path class="cls-1" d="M464.56,61.42c-2.64,1.41-6.69,2-10.74,2-15.66,0-23-9.5-23-23,0-13.29,7.3-22.79,23-22.79a23.26,23.26,0,0,1,10.47,2.11v7a22.18,22.18,0,0,0-9.94-2.11c-11.44,0-16.1,7.22-16.1,15.75S443,56.23,454.52,56.23a27.8,27.8,0,0,0,10-1.58Z"/><path class="cls-1" d="M494.21,63.45c-16.46,0-23.67-9.5-23.67-23,0-13.29,7.39-22.79,20.77-22.79,13.55,0,19,9.42,19,22.79v3.43H478.19c1.06,7.48,5.9,12.32,16.28,12.32a39,39,0,0,0,13.38-2.38v7C504.24,62.74,498.7,63.45,494.21,63.45Zm-16.1-26h24.55c-.44-8.18-4.14-12.85-11.7-12.85C482.95,24.55,478.9,29.74,478.11,37.4Z"/><path class="cls-2" d="M2.23,49.53c-.65,1.06-1.38,2.29-2,3.27a2,2,0,0,0,.67,2.72l13,8a2,2,0,0,0,2.77-.68c.52-.87,1.19-2,1.92-3.21,5.15-8.5,10.33-7.46,19.67-3l12.89,6.13a2,2,0,0,0,2.69-1l6.19-14a2,2,0,0,0-1-2.62c-2.72-1.28-8.13-3.83-13-6.18C28.51,30.45,13.62,31,2.23,49.53Z"/><path class="cls-3" d="M60.52,17.76c.65-1.06,1.38-2.29,2-3.27a2,2,0,0,0-.67-2.72l-13-8A2,2,0,0,0,46,4.43c-.52.87-1.19,2-1.92,3.21-5.15,8.5-10.33,7.46-19.67,3L11.56,4.54a2,2,0,0,0-2.69,1l-6.19,14a2,2,0,0,0,1,2.62c2.72,1.28,8.13,3.83,13,6.18C34.24,36.84,49.13,36.27,60.52,17.76Z"/></g></g></svg>
+      </li>
+      <li><!-- Bitbucket -->
+        <svg style="height:17px;" role="img" aria-label="Bitbucket-Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 443.43 63.27"><defs><style>.cls-1{fill:#253858;}.cls-2{fill:none;}.cls-3{fill:#2684ff;}.cls-4{fill:url(#New_Gradient_Swatch_1);}</style><linearGradient id="New_Gradient_Swatch_1" x1="64.01" y1="30.27" x2="32.99" y2="54.48" gradientUnits="userSpaceOnUse"><stop offset="0.18" stop-color="#0052cc"/><stop offset="1" stop-color="#2684ff"/></linearGradient></defs><title>Bitbucket-blue</title><g id="Layer_2" data-name="Layer 2"><g id="Blue"><path class="cls-1" d="M116.87,4.58c11.79,0,17.51,5.81,17.51,15.14,0,7-3.17,11.26-9.68,12.85,8.54,1.41,12.76,6.07,12.76,14.25,0,9.24-6.25,15.58-19.18,15.58H94.43V4.58Zm-14.52,7.57V29.39h13.46c7.48,0,10.56-3.43,10.56-9s-3.34-8.27-10.56-8.27Zm0,24.29v18h16.19c7.57,0,11-2.73,11-8.54,0-6.16-3.26-9.5-11.17-9.5Z"/><path class="cls-1" d="M150.4,1.5a4.94,4.94,0,0,1,5.28,5.28,5.28,5.28,0,0,1-10.56,0A4.94,4.94,0,0,1,150.4,1.5Zm-3.87,16.9h7.57v44h-7.57Z"/><path class="cls-1" d="M183,55a24,24,0,0,0,4.75-.62v7.3a18.19,18.19,0,0,1-5.1.7c-9.42,0-14-5.54-14-13.73V25.43h-7.13v-7h7.13V9.06H176v9.33h11.7v7H176V48.49C176,52.36,178.29,55,183,55Z"/><path class="cls-1" d="M218.95,63.27c-6.42,0-11.35-2.9-14-8.62v7.74h-7.57V0H205V26.31c2.82-5.81,8.1-8.8,14.87-8.8,11.7,0,17.6,9.94,17.6,22.88C237.43,52.8,231.27,63.27,218.95,63.27ZM217.8,24.55C211,24.55,205,28.86,205,38.63v3.52c0,9.77,5.54,14.08,12,14.08,8.54,0,12.94-5.63,12.94-15.84C229.86,29.83,225.64,24.55,217.8,24.55Z"/><path class="cls-1" d="M245.35,18.39h7.57V45c0,7.92,3.17,11.44,10.38,11.44,7,0,11.88-4.66,11.88-13.55V18.39h7.57v44h-7.57V55.17a15.43,15.43,0,0,1-13.9,8.1c-10.12,0-15.93-7-15.93-19.1Z"/><path class="cls-1" d="M325.25,61.25c-2.64,1.41-6.69,2-10.74,2-15.66,0-23-9.5-23-23,0-13.29,7.3-22.79,23-22.79A23.26,23.26,0,0,1,325,19.62v7A22.17,22.17,0,0,0,315,24.55c-11.44,0-16.1,7.21-16.1,15.75s4.75,15.75,16.28,15.75a27.78,27.78,0,0,0,10-1.58Z"/><path class="cls-1" d="M333.88,62.39V0h7.57V39l18.92-20.59h9.86L349.54,40,371.1,62.39H360.8L341.44,41.8V62.39Z"/><path class="cls-1" d="M396.18,63.27c-16.46,0-23.67-9.5-23.67-23,0-13.29,7.39-22.79,20.77-22.79,13.55,0,19,9.42,19,22.79v3.43H380.16c1.06,7.48,5.9,12.32,16.28,12.32a39,39,0,0,0,13.38-2.37v7C406.21,62.57,400.67,63.27,396.18,63.27Zm-16.1-26h24.55c-.44-8.18-4.14-12.85-11.7-12.85C384.91,24.38,380.87,29.57,380.08,37.22Z"/><path class="cls-1" d="M438.68,55a24,24,0,0,0,4.75-.62v7.3a18.19,18.19,0,0,1-5.1.7c-9.42,0-14-5.54-14-13.73V25.43h-7.13v-7h7.13V9.06h7.39v9.33h11.7v7h-11.7V48.49C431.73,52.36,434,55,438.68,55Z"/><polygon class="cls-2" points="24.7 43.51 37.75 43.51 40.9 25.12 21.23 25.12 24.7 43.51"/><path class="cls-3" d="M2,6.26A2,2,0,0,0,0,8.58L8.49,60.12a2.72,2.72,0,0,0,2.66,2.27H51.88a2,2,0,0,0,2-1.68L62.37,8.59a2,2,0,0,0-2-2.32ZM37.75,43.51h-13L21.23,25.12H40.9Z"/><path class="cls-4" d="M59.67,25.12H40.9L37.75,43.51h-13L9.4,61.73a2.71,2.71,0,0,0,1.75.66H51.89a2,2,0,0,0,2-1.68Z"/></g></g></svg>
+      </li>
+      <li><!-- Hipchat -->
+        <svg style="height:21px;" role="img" aria-label="Hipchat-Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 381.64 79.55"><defs><style>.cls-1{fill:#253858;}.cls-2{fill:url(#New_Gradient_Swatch_1);}</style><linearGradient id="New_Gradient_Swatch_1" x1="32.77" y1="68.57" x2="32.77" y2="26.58" gradientUnits="userSpaceOnUse"><stop offset="0.18" stop-color="#0052cc"/><stop offset="1" stop-color="#2684ff"/></linearGradient></defs><title>Hipchat-blue</title><g id="Layer_2" data-name="Layer 2"><g id="Blue"><path class="cls-1" d="M104,4.58V30.71h30.45V4.58h7.92V62.39h-7.92V38.28H104V62.39H96.08V4.58Z"/><path class="cls-1" d="M158.92,1.5a4.94,4.94,0,0,1,5.28,5.28,5.28,5.28,0,0,1-10.56,0A4.94,4.94,0,0,1,158.92,1.5ZM155,18.39h7.57v44H155Z"/><path class="cls-1" d="M181.62,54.65v24.9h-7.57V18.39h7.57v7.92c2.82-5.81,8.1-8.8,14.87-8.8,11.7,0,17.6,9.94,17.6,22.88,0,12.41-6.16,22.88-18.48,22.88C189.19,63.27,184.26,60.37,181.62,54.65Zm12.85-30.1c-6.78,0-12.85,4.31-12.85,14.08v3.52c0,9.77,5.54,14.08,12,14.08,8.54,0,12.94-5.63,12.94-15.84C206.52,29.83,202.3,24.55,194.47,24.55Z"/><path class="cls-1" d="M254,61.25c-2.64,1.41-6.69,2-10.74,2-15.66,0-23-9.5-23-23,0-13.29,7.3-22.79,23-22.79a23.26,23.26,0,0,1,10.47,2.11v7a22.18,22.18,0,0,0-9.94-2.11c-11.44,0-16.1,7.22-16.1,15.75s4.75,15.75,16.28,15.75a27.8,27.8,0,0,0,10-1.58Z"/><path class="cls-1" d="M300,62.39h-7.57V37.93c0-9.06-3.17-13.55-10.38-13.55-7,0-11.88,4.66-11.88,13.55V62.39h-7.57V0h7.57V25.7a16.07,16.07,0,0,1,14.52-8.18c9.86,0,15.31,6.69,15.31,19.1Z"/><path class="cls-1" d="M340.46,54.47c-2.82,5.81-8.1,8.8-14.87,8.8-11.7,0-17.6-9.94-17.6-22.88,0-12.41,6.16-22.88,18.48-22.88,6.42,0,11.35,2.9,14,8.62V18.39H348v44h-7.57Zm-12.85,1.76c6.78,0,12.85-4.31,12.85-14.08V38.63c0-9.77-5.54-14.08-12-14.08-8.54,0-12.94,5.63-12.94,15.84C315.55,51,319.78,56.23,327.61,56.23Z"/><path class="cls-1" d="M376.89,55a24,24,0,0,0,4.75-.62v7.3a18.19,18.19,0,0,1-5.1.7c-9.42,0-14-5.54-14-13.73V25.43h-7.13v-7h7.13V9.06h7.39v9.33h11.7v7h-11.7V48.49C369.94,52.36,372.23,55,376.89,55Z"/><path class="cls-2" d="M53.9,52.74s.28-.19.74-.55c6.7-5.18,10.91-12.7,10.91-21.07,0-15.61-14.67-28.27-32.77-28.27S0,15.51,0,31.12,14.67,59.41,32.77,59.41a37.93,37.93,0,0,0,6.89-.63l.71-.13c4.61,3,11.31,5.44,17.17,5.44,1.83,0,2.68-1.49,1.52-3C57.29,58.9,54.85,55.42,53.9,52.74Zm-4-12.36c-1.95,2.92-8,7.89-17.08,7.89H32.7c-9.09,0-15.14-5-17.08-7.89a3.05,3.05,0,0,1-.74-1.57,1.33,1.33,0,0,1,1.28-1.44,1.63,1.63,0,0,1,.89.3,25,25,0,0,0,15.72,5.61h0A24,24,0,0,0,48.5,37.66a1.28,1.28,0,0,1,.86-.33,1.31,1.31,0,0,1,1.31,1.3A3.57,3.57,0,0,1,49.93,40.38Z"/></g></g></svg>
+      </li>
+      <li><!-- PhpStorm -->
+        <svg style="height: 70px;" role="img" aria-label="PhpStorm-Logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 70" xml:space="preserve"><g><g><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0.558" y1="46.8457" x2="29.9473" y2="8.0256"><stop  offset="1.612903e-002" style="stop-color:#765AF8"/><stop  offset="0.3821" style="stop-color:#B345F1"/><stop  offset="0.7581" style="stop-color:#FA3293"/><stop  offset="0.9409" style="stop-color:#FF318C"/></linearGradient><polygon style="fill:url(#SVGID_1_);" points="39.6,15.2 36.3,5.2 11.9,0 0,13.5 37.2,32.5 "/><linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="2.7297" y1="48.3788" x2="32.0719" y2="9.6209"><stop  offset="1.612903e-002" style="stop-color:#765AF8"/><stop  offset="0.3821" style="stop-color:#B345F1"/><stop  offset="0.7581" style="stop-color:#FA3293"/><stop  offset="0.9409" style="stop-color:#FF318C"/></linearGradient><polygon style="fill:url(#SVGID_2_);" points="28,41.4 27.3,20.6 0,13.5 6.7,53.6 28,53.4 "/><linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="50.8568" y1="46.405" x2="34.2739" y2="7.0481"><stop  offset="0.1828" style="stop-color:#765AF8"/><stop  offset="0.2382" style="stop-color:#8655F6"/><stop  offset="0.3449" style="stop-color:#9F4CF3"/><stop  offset="0.4425" style="stop-color:#AE47F2"/><stop  offset="0.5219" style="stop-color:#B345F1"/></linearGradient><polygon style="fill:url(#SVGID_3_);" points="22.1,41 23.4,24.5 43.2,4.2 60.9,7.4 70,30.1 60.5,39.5 45,37 35.4,47.1 "/><linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="63.2656" y1="57.3388" x2="24.6977" y2="27.5158"><stop  offset="1.612903e-002" style="stop-color:#765AF8"/><stop  offset="0.3821" style="stop-color:#B345F1"/></linearGradient><polygon style="fill:url(#SVGID_4_);" points="43.2,4.2 14.8,29.4 20.3,61.8 43.9,70 70,54.4 "/></g><g><rect x="13.4" y="13.4" style="fill:#000000;" width="43.2" height="43.2"/><rect x="17.5" y="48.5" style="fill:#FFFFFF;" width="16.2" height="2.7"/><path style="fill:#FFFFFF;" d="M17.3,19h7.3c4.3,0,6.9,2.5,6.9,6.2v0.1c0,4.2-3.2,6.3-7.3,6.3h-3l0,5.4h-3.9L17.3,19z M24.4,28c2,0,3.1-1.2,3.1-2.7v-0.1c0-1.8-1.2-2.7-3.2-2.7h-3V28H24.4z"/><path style="fill:#FFFFFF;" d="M32.5,34.4l2.3-2.8c1.6,1.3,3.3,2.2,5.4,2.2c1.6,0,2.6-0.6,2.6-1.7V32c0-1-0.6-1.5-3.6-2.3c-3.6-0.9-6-1.9-6-5.5v-0.1c0-3.3,2.6-5.4,6.3-5.4c2.6,0,4.9,0.8,6.7,2.3l-2.1,3c-1.6-1.1-3.2-1.8-4.7-1.8c-1.5,0-2.3,0.7-2.3,1.6v0.1c0,1.2,0.8,1.6,3.9,2.4c3.6,1,5.7,2.3,5.7,5.4v0.1c0,3.6-2.7,5.6-6.6,5.6C37.4,37.3,34.7,36.3,32.5,34.4"/></g></g></svg>
+      </li>
+      <li>
+        <a href="https://github.com/afoeder">
+          <i class="fab fa-github fa-3x"></i>
+        </a>
+      </li>
+      <li>
+        <i class="fab fa-git fa-3x"></i>
+      </li>
+      <li>
+        <a href="https://twitter.com/afoeder">
+          <svg style="height: 70px;" role="img" aria-label="Twitter-Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><style>.twitter-cls-1{fill:none;}.twitter-cls-2{fill:#1da1f2;}</style></defs><title>Twitter_Logo_Blue</title><rect class="twitter-cls-1" width="400" height="400"/><path class="twitter-cls-2" d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/afoeder/">
+          <i class="fab fa-linkedin fa-3x"></i>
+        </a>
+      </li>
+      <li><!-- StackOverflow -->
+        <a href="https://stackoverflow.com/users/1388892/adrian-f%C3%B6der">
+          <svg style="height: 42px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480.5 117.9" xml:space="preserve"><style type="text/css"> .st0{fill:#222426;} .st1{fill:#BCBBBB;} .st2{fill:#F48024;} </style><path class="st0" d="M123.7,67.3l-4.8-0.4c-3.7-0.3-5.2-1.8-5.2-4.3c0-3,2.3-4.9,6.6-4.9c3.1,0,5.8,0.7,7.9,2.4l2.8-2.8 c-2.7-2.2-6.4-3.2-10.7-3.2c-6.3,0-10.9,3.3-10.9,8.7c0,4.9,3.1,7.5,8.9,8l4.9,0.4c3.4,0.3,4.9,1.7,4.9,4.3c0,3.5-3,5.2-7.9,5.2 c-3.7,0-6.9-1-9.2-3.4l-2.9,2.9c3.3,3.1,7.2,4.3,12.2,4.3c7.2,0,12.1-3.3,12.1-9C132.5,69.7,128.9,67.8,123.7,67.3z M160.9,53.9 c-4.8,0-7.8,0.9-10.4,4.3l2.8,2.8c1.7-2.5,3.7-3.4,7.5-3.4c5.4,0,7.6,2.2,7.6,6.5V67h-8.9c-6.6,0-10.2,3.4-10.2,8.6 c0,2.4,0.8,4.6,2.2,6c1.9,1.9,4.3,2.7,8.4,2.7c4,0,6.1-0.8,8.6-3.2V84h4.3V63.8C172.7,57.4,168.8,53.9,160.9,53.9z M168.4,73.5 c0,2.5-0.5,4.2-1.5,5.1c-1.9,1.8-4.1,2-6.6,2c-4.7,0-6.8-1.6-6.8-5.1c0-3.4,2.2-5.2,6.6-5.2h8.3V73.5z M189.7,57.8 c2.8,0,4.6,0.8,6.8,3.3l2.9-2.8c-3-3.3-5.6-4.3-9.7-4.3c-7.5,0-13.1,5.1-13.1,15.2s5.7,15.2,13.1,15.2c4.1,0,6.7-1.1,9.8-4.4l-3-2.8 c-2.2,2.5-4,3.4-6.8,3.4c-2.9,0-5.3-1.1-6.9-3.4c-1.4-1.9-1.9-4.2-1.9-8c0-3.7,0.5-6,1.9-8C184.4,58.9,186.8,57.8,189.7,57.8z M226.9,54.3h-5.4L208,67.4V41.1h-4.3V84h4.3V73.2l5.3-5.3l9.9,16.1h5.4l-12.3-19.1L226.9,54.3z M247.3,52.7c-4.6,0-7.6,1.8-9.5,3.8 c-2.8,2.9-3.5,6.4-3.5,12s0.7,9.1,3.5,12c1.9,2,5,3.8,9.5,3.8c4.6,0,7.7-1.8,9.6-3.8c2.8-2.9,3.5-6.4,3.5-12s-0.7-9.1-3.5-12 C255,54.5,251.8,52.7,247.3,52.7z M250.9,76c-0.9,0.9-2.1,1.4-3.6,1.4s-2.7-0.5-3.6-1.4c-1.6-1.6-1.8-4.3-1.8-7.5s0.2-5.9,1.8-7.5 c0.9-0.9,2-1.4,3.6-1.4c1.5,0,2.7,0.5,3.6,1.4c1.6,1.6,1.8,4.3,1.8,7.5C252.7,71.7,252.5,74.4,250.9,76z M280.9,53.1l-6.2,19.1 l-6.3-19.1h-8.1L271.7,84h6L289,53.1H280.9z M302.2,52.7c-8,0-13.5,5.7-13.5,15.8c0,12.5,7,15.8,14.3,15.8c5.6,0,8.6-1.7,11.7-4.9 l-4.7-4.6c-2,2-3.6,2.9-7,2.9c-4.3,0-6.8-2.9-6.8-6.9h19.3v-3.4C315.6,59,310.7,52.7,302.2,52.7z M296.3,65.6 c0.1-1.4,0.2-2.2,0.7-3.3c0.8-1.8,2.5-3.2,5.2-3.2c2.6,0,4.3,1.4,5.2,3.2c0.5,1.1,0.7,2,0.7,3.3H296.3z M327,56v-3h-7.5v31h7.7V65.4 c0-3.9,2.6-5.7,5-5.7c1.9,0,2.9,0.6,4.1,1.8l5.8-5.8c-2.1-2.1-4.3-2.9-7.3-2.9C331.4,52.7,328.5,54.3,327,56z M344.4,49.9V84h7.7 V59.6h5.7v-5.9h-5.7v-3.4c0-1.8,0.9-2.8,2.7-2.8h3V41h-4.4C347.2,41,344.4,45.5,344.4,49.9z M389.6,52.7c-4.6,0-7.6,1.8-9.5,3.8 c-2.8,2.9-3.5,6.4-3.5,12s0.7,9.1,3.5,12c1.9,2,5,3.8,9.5,3.8c4.6,0,7.7-1.8,9.6-3.8c2.8-2.9,3.5-6.4,3.5-12s-0.7-9.1-3.5-12 C397.3,54.5,394.1,52.7,389.6,52.7z M393.2,76c-0.9,0.9-2.1,1.4-3.6,1.4s-2.7-0.5-3.6-1.4c-1.6-1.6-1.8-4.3-1.8-7.5s0.2-5.9,1.8-7.5 c0.9-0.9,2-1.4,3.6-1.4c1.5,0,2.7,0.5,3.6,1.4c1.6,1.6,1.8,4.3,1.8,7.5S394.8,74.4,393.2,76z M439.1,53.1l-5,19.1l-6.3-19.1h-5.6 l-6.3,19.1l-5-19.1h-8.2l9.5,30.9h6.3l6.5-19.4l6.5,19.4h6.3l9.4-30.9H439.1z M369.2,74.7V41h-7.7v34.1c0,4.4,2.7,8.8,9,8.8h4.4 v-6.5h-3C370,77.4,369.2,76.5,369.2,74.7z M144.5,59l4-4h-8.2v-9.8H136V76c0,4.4,2.5,8,7.6,8h3.1v-3.7h-2.3c-2.8,0-4-1.6-4-4.3V59 H144.5z"/><polygon class="st1" points="87.6,91.3 87.6,69.3 95,69.3 95,98.6 29.1,98.6 29.1,69.3 36.4,69.3 36.4,91.3 "/><path class="st2" d="M44.5,67.3l35.9,7.5l1.5-7.2L46,60.1L44.5,67.3z M49.2,50.1l33.2,15.5l3.1-6.6L52.3,43.4L49.2,50.1z M58.4,33.8 l28.2,23.4l4.7-5.6L63.1,28.2L58.4,33.8z M76.6,16.5l-5.9,4.4l21.9,29.4l5.9-4.4L76.6,16.5z M43.7,83.9h36.6v-7.3H43.7 C43.7,76.6,43.7,83.9,43.7,83.9z"/></svg>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="professional-career">
+    <h2>Beruflicher Werdegang</h2>
+
+    <dl>
+      <dt>seit 03/2015</dt>
+      <dd><h4>NETFORMIC GmbH <small>(Internet, e&#x2011;Commerce)</small></h4>
+          »Senior Software Developer«, »IT-Consultant«, »Technical Lead«.
+          Umsetzung SaaS-Produkte, Design von
+          HTTP-APIs, technische Qualitätssicherung
+      </dd>
+
+      <dt>09/2011 – 03/2015</dt>
+      <dd><h4>wishbase GmbH <small>(Internet, Crowdfunding)</small></h4>
+          Gründer & CTO</dd>
+
+      <dt>12/2007 – 09/2011</dt>
+      <dd><h4>anders und sehr GmbH (vormals iVeins) <small>(Internet/-Agentur)</small></h4>
+          »IT-Berater«, TYPO3-Integrator und Web-Anwendungs-Entwickler</dd>
+
+      <dt>11/2005 – 10/2007</dt>
+      <dd><h4>SITE oHG Bonn <small>(Versicherung)</small></h4>
+          Stellv. Leiter IT-Abteilung, Implementierung von Geschäftsprozessen</dd>
+      <dt>03/2004 – 10/2005</dt>
+      <dd><h4>gutura GmbH <small>(IT-Dienstleistungen)</small></h4>
+          Web-Entwickler PHP, TYPO3-Entwickler, Visual Basic-Entwickler</dd>
+      <dt>08/2001 – 02/2004</dt>
+      <dd><h4>Radio Heymann <small>(Unterhaltungselektronik, Hausgeräte)</small></h4>
+          Ausbildung zum Informationselektroniker</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Weiterbildung und zusätzliche Qualifikationen</h2>
+
+    <ul>
+      <li>iSAQB® Certified Professional forSoftware Architecture <small>Foundation Level – seit&nbsp;2017</small></li>
+      <li>ICAO Language Profciency English Level 4 <small>seit 2012</small></li>
+      <li>TYPO3 Certifed Integrator (4.x) <small>seit 2010</small></li>
+      <li>Zend Certifed Engineer <small>seit 2010</small></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Sonstige Qualifikationen und Kenntnisse sowie Freizeitaktivitäten</h2>
+
+    <ul>
+      <li>Inhaber Privatpilotenlizenz PPL(A) für einmotorige Propellerfugzeuge</li>
+      <li>Inhaber Allgemeines Sprechfunkzeugnis für den Flugfunkdienst (AZF)</li>
+      <li>Interesse für Lebensmittelzubereitung, Fotografe, Filme und Serien, Wissenschaft und Technik</li>
+    </ul>
+  </section>
+
+  <section id="educational-career">
+    <h2>Bildung</h2>
+
+    <dl>
+      <dt>2000 – 2004</dt>
+      <dd>Abgeschlossene Berufsausbildung zum Informationselektroniker</dd>
+      <dt>bis 2000</dt>
+      <dd>Georg-Büchner-Gymnasium Winnenden</dd>
+    </dl>
+  </section>
+
+  <section id="exlibris">
+    <h2>Ex Librīs <small>Bücher die ich lebe</small></h2>
+
+    <p>Im folgenden eine Auflistung von Fachbüchern, die meine Denk- und Arbeitsweise
+      nennenswert geprägt hat. Die Reihenfolge ist frei heraus wie sie mir eingefallen ist.</p>
+
+    <ul>
+      <li itemscope itemtype="http://schema.org/Book">
+        <figure>
+          <img src="https://books.google.com/books/content?id=xColAAPGubgC&printsec=frontcover&img=1&zoom=1" alt="Cover-Foto" width="128">
+          <footer>
+            <small>Bild:
+              <a itemprop="sameAs" href="https://books.google.de/books?id=xColAAPGubgC&hl=de&num=10">Google Books</a>
+            </small>
+          </footer>
+        </figure>
+
+        <h4 itemprop="name">Domain-Driven Design</h4>
+        von <span itemprop="author">Eric Evans</span>
+
+      </li>
+
+      <li itemscope itemtype="http://schema.org/Book">
+        <figure>
+          <img src="https://books.google.com/books/content?id=X7DpD5g3VP8C&printsec=frontcover&img=1&zoom=1" alt="Cover-Foto" width="128">
+          <footer>
+            <small>Bild:
+              <a itemprop="sameAs" href="https://books.google.de/books?id=X7DpD5g3VP8C&hl=de&num=10">Google Books</a>
+            </small>
+          </footer>
+        </figure>
+
+        <h4 itemprop="name">Implementing Domain-Driven Design</h4>
+        von <span itemprop="author">Vaughn Vernon</span>
+      </li>
+
+      <li itemscope itemtype="http://schema.org/Book">
+        <figure>
+         <img src="https://books.google.com/books/content?id=vqTfNFDzzdIC&printsec=frontcover&img=1&zoom=1" alt="Cover-Foto" width="128">
+          <footer>
+            <small>Bild:
+              <a itemprop="sameAs" href="https://books.google.de/books?id=vqTfNFDzzdIC&hl=de&num=10">Google Books</a>
+            </small>
+          </footer>
+        </figure>
+
+        <h4 itemprop="name">Patterns of Enterprise Application Architecture</h4>
+        von <span itemprop="author">Martin Fowler</span>
+      </li>
+
+      <li itemscope itemtype="http://schema.org/Book">
+        <figure>
+          <img src="https://books.google.com/books/content?id=tYPAsgEACAAJ&printsec=frontcover&img=1&zoom=1" alt="Cover-Foto" width="128">
+          <footer>
+            <small>Bild:
+              <a itemprop="sameAs" href="https://books.google.de/books?id=tYPAsgEACAAJ&hl=de&num=10">Google Books</a>
+            </small>
+          </footer>
+        </figure>
+
+        <h4 itemprop="name">Reactive Design Patterns</h4>
+        von <span itemprop="author">Roland Kuhn</span>
+      </li>
+
+      <li itemscope itemtype="http://schema.org/Book">
+        <figure>
+          <img src="https://books.google.com/books/content?id=HTOdjwEACAAJ&printsec=frontcover&img=1&zoom=1" alt="Cover-Foto" width="128">
+          <footer>
+            <small>Bild:
+              <a itemprop="sameAs" href="https://books.google.de/books?id=HTOdjwEACAAJ&hl=de&num=10">Google Books</a>
+            </small>
+          </footer>
+        </figure>
+
+        <h4 itemprop="name">Domain-Driven Design distilled</h4>
+        von <span itemprop="author">Vaughn Vernon</span>
+      </li>
+
+      <li itemscope itemtype="http://schema.org/Book">
+        <figure>
+          <img src="https://books.google.com/books/content?id=ZXDGAAAAQBAJ&printsec=frontcover&img=1&zoom=1" alt="Cover-Foto" width="128">
+          <footer>
+            <small>Bild:
+              <a itemprop="sameAs" href="https://books.google.de/books?id=ZXDGAAAAQBAJ&hl=de&num=10">Google Books</a>
+            </small>
+          </footer>
+        </figure>
+
+        <h4 itemprop="name">RESTful Web APIs</h4>
+        von <span itemprop="author">Leonard Richardson</span>
+      </li>
+
+      <li itemscope itemtype="http://schema.org/Book">
+        <figure>
+          <img src="https://books.google.com/books/content?id=ggryjwEACAAJ&printsec=frontcover&img=1&zoom=1" alt="Cover-Foto" width="128">
+          <footer>
+            <small>Bild:
+              <a itemprop="sameAs" href="https://books.google.de/books?id=ggryjwEACAAJ&hl=de&num=10">Google Books</a>
+            </small>
+          </footer>
+        </figure>
+
+        <h4 itemprop="name">Elegant Objects</h4>
+        von <span itemprop="author">Yegor Bugayenko</span>
+      </li>
+
+      <li itemscope itemtype="http://schema.org/Book">
+        <figure>
+          <img src="https://books.google.com/books/content?id=CpbLAgAAQBAJ&printsec=frontcover&img=1&zoom=1" alt="Cover-Foto" width="128">
+          <footer>
+            <small>Bild:
+              <a itemprop="sameAs" href="https://books.google.de/books?id=CpbLAgAAQBAJ&hl=de&num=10">Google Books</a>
+            </small>
+          </footer>
+        </figure>
+
+        <h4 itemprop="name">Thinking in systems</h4>
+        von <span itemprop="author">Donella H. Meadows</span>
+      </li>
+
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <small>Credits:
+    <a href="https://www.atlassian.com/company/news/press-kit">Atlassian-Logos</a>,
+    <a href="https://www.jetbrains.com/company/press/#product-logos">PhpStorm (JetBrains) - Logo</a>,
+    <a href="https://about.twitter.com/en_us/company/brand-resources.html">Twitter-Logo</a>
+  </small>
+</footer>
+
+<script>
+  (function(d) {
+      var config = {
+              kitId: 'vgh7jdw',
+              scriptTimeout: 3000,
+              async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+</body>
+</html>
