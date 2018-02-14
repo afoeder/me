@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="none"> <!-- don't pop up in search results, just have deep-linking -->
 
   <title>afoeder.me — That's me</title>
 
@@ -20,6 +21,7 @@
     }
     a svg.svg-inline--fa { color: #424242; }
     a svg.fa-linkedin { color: #0077b5; }
+    a svg.fa-meetup { color: #e51937; }
     h1,h2,h3 {
       line-height:1.2;
     }
@@ -41,8 +43,12 @@
       font-size: 85px;
       position: absolute;
       top: -75px;
-      left: -48px;
-      color:lightgray;
+      left: -26px;
+      color: #e0e0e0;
+      z-index: -2;
+    }
+    blockquote::after {
+      content: "«";
     }
     section h2 small {
       white-space: nowrap;
@@ -86,6 +92,9 @@
       transform: translate3d(0, 0, 0);
       backface-visibility: hidden;
       perspective: 1000px;
+    }
+    section#skills ul li img {
+      width: auto;
     }
 
     /*section#professional-career h4 {
@@ -159,7 +168,7 @@
 
 <main itemprop="mainEntity" itemscope itemtype="http://schema.org/Person">
 
-  <h1>Ich bin's, <em>afoeder</em>.</h1>
+  <h1>It's me, <em>afoeder</em>.</h1>
   <p>Software-Architekt. Von schneller Auffassungsgabe, mit Blick fürs&nbsp;Detail wie fürs&nbsp;Große&nbsp;Ganze.</p>
   <blockquote>Einfach halten!</blockquote>
   <p>Seit 6 vor der Tastatur,
@@ -167,7 +176,14 @@
   <p>Ich bin häufiger und aktiver Open-Source-Contributor
     <a href="https://github.com/afoeder"><i class="fab fa-github-square"></i></a>
     und stets mit dem Ohr am Gleis der technischen Entwicklung.</p>
-  <p>Hypermedia- und Semantik-Liebhaber.</p>
+  <p>Hypermedia- und Semantik-Liebhaber mit Verständnis der Anatomie von Fehlern.</p>
+  <p>Präzise in Wort und Schrift.</p>
+  <p>Clean Code!</p>
+  <p>Domain-Driven Design!</p>
+  <p>Ich weiß, wie <a href="https://tools.ietf.org/html/rfc7230">HTTP funktioniert</a> und habe eine tiefsitzende
+    Zuneigung zu ISO-Standards, allen voran <a href="https://de.wikipedia.org/wiki/ISO_8601">ISO 8601</a>.</p>
+  <blockquote><a href="https://martinfowler.com/articles/serverless.html">Serverless</a> ist der neue Shit!</blockquote>
+  <p>☕️</p>
 
   <section>
 
@@ -194,7 +210,7 @@
   </section>
 
   <section id="skills">
-    <h2>Skills und Tools <small>damit kenne ich mich aus!</small></h2>
+    <h2>Skills und Tools <small>damit arbeite oder kenne ich mich aus!</small></h2>
 
     <ul>
       <li><!-- JIRA -->
@@ -235,6 +251,33 @@
           <svg style="height: 42px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480.5 117.9" xml:space="preserve"><style type="text/css"> .st0{fill:#222426;} .st1{fill:#BCBBBB;} .st2{fill:#F48024;} </style><path class="st0" d="M123.7,67.3l-4.8-0.4c-3.7-0.3-5.2-1.8-5.2-4.3c0-3,2.3-4.9,6.6-4.9c3.1,0,5.8,0.7,7.9,2.4l2.8-2.8 c-2.7-2.2-6.4-3.2-10.7-3.2c-6.3,0-10.9,3.3-10.9,8.7c0,4.9,3.1,7.5,8.9,8l4.9,0.4c3.4,0.3,4.9,1.7,4.9,4.3c0,3.5-3,5.2-7.9,5.2 c-3.7,0-6.9-1-9.2-3.4l-2.9,2.9c3.3,3.1,7.2,4.3,12.2,4.3c7.2,0,12.1-3.3,12.1-9C132.5,69.7,128.9,67.8,123.7,67.3z M160.9,53.9 c-4.8,0-7.8,0.9-10.4,4.3l2.8,2.8c1.7-2.5,3.7-3.4,7.5-3.4c5.4,0,7.6,2.2,7.6,6.5V67h-8.9c-6.6,0-10.2,3.4-10.2,8.6 c0,2.4,0.8,4.6,2.2,6c1.9,1.9,4.3,2.7,8.4,2.7c4,0,6.1-0.8,8.6-3.2V84h4.3V63.8C172.7,57.4,168.8,53.9,160.9,53.9z M168.4,73.5 c0,2.5-0.5,4.2-1.5,5.1c-1.9,1.8-4.1,2-6.6,2c-4.7,0-6.8-1.6-6.8-5.1c0-3.4,2.2-5.2,6.6-5.2h8.3V73.5z M189.7,57.8 c2.8,0,4.6,0.8,6.8,3.3l2.9-2.8c-3-3.3-5.6-4.3-9.7-4.3c-7.5,0-13.1,5.1-13.1,15.2s5.7,15.2,13.1,15.2c4.1,0,6.7-1.1,9.8-4.4l-3-2.8 c-2.2,2.5-4,3.4-6.8,3.4c-2.9,0-5.3-1.1-6.9-3.4c-1.4-1.9-1.9-4.2-1.9-8c0-3.7,0.5-6,1.9-8C184.4,58.9,186.8,57.8,189.7,57.8z M226.9,54.3h-5.4L208,67.4V41.1h-4.3V84h4.3V73.2l5.3-5.3l9.9,16.1h5.4l-12.3-19.1L226.9,54.3z M247.3,52.7c-4.6,0-7.6,1.8-9.5,3.8 c-2.8,2.9-3.5,6.4-3.5,12s0.7,9.1,3.5,12c1.9,2,5,3.8,9.5,3.8c4.6,0,7.7-1.8,9.6-3.8c2.8-2.9,3.5-6.4,3.5-12s-0.7-9.1-3.5-12 C255,54.5,251.8,52.7,247.3,52.7z M250.9,76c-0.9,0.9-2.1,1.4-3.6,1.4s-2.7-0.5-3.6-1.4c-1.6-1.6-1.8-4.3-1.8-7.5s0.2-5.9,1.8-7.5 c0.9-0.9,2-1.4,3.6-1.4c1.5,0,2.7,0.5,3.6,1.4c1.6,1.6,1.8,4.3,1.8,7.5C252.7,71.7,252.5,74.4,250.9,76z M280.9,53.1l-6.2,19.1 l-6.3-19.1h-8.1L271.7,84h6L289,53.1H280.9z M302.2,52.7c-8,0-13.5,5.7-13.5,15.8c0,12.5,7,15.8,14.3,15.8c5.6,0,8.6-1.7,11.7-4.9 l-4.7-4.6c-2,2-3.6,2.9-7,2.9c-4.3,0-6.8-2.9-6.8-6.9h19.3v-3.4C315.6,59,310.7,52.7,302.2,52.7z M296.3,65.6 c0.1-1.4,0.2-2.2,0.7-3.3c0.8-1.8,2.5-3.2,5.2-3.2c2.6,0,4.3,1.4,5.2,3.2c0.5,1.1,0.7,2,0.7,3.3H296.3z M327,56v-3h-7.5v31h7.7V65.4 c0-3.9,2.6-5.7,5-5.7c1.9,0,2.9,0.6,4.1,1.8l5.8-5.8c-2.1-2.1-4.3-2.9-7.3-2.9C331.4,52.7,328.5,54.3,327,56z M344.4,49.9V84h7.7 V59.6h5.7v-5.9h-5.7v-3.4c0-1.8,0.9-2.8,2.7-2.8h3V41h-4.4C347.2,41,344.4,45.5,344.4,49.9z M389.6,52.7c-4.6,0-7.6,1.8-9.5,3.8 c-2.8,2.9-3.5,6.4-3.5,12s0.7,9.1,3.5,12c1.9,2,5,3.8,9.5,3.8c4.6,0,7.7-1.8,9.6-3.8c2.8-2.9,3.5-6.4,3.5-12s-0.7-9.1-3.5-12 C397.3,54.5,394.1,52.7,389.6,52.7z M393.2,76c-0.9,0.9-2.1,1.4-3.6,1.4s-2.7-0.5-3.6-1.4c-1.6-1.6-1.8-4.3-1.8-7.5s0.2-5.9,1.8-7.5 c0.9-0.9,2-1.4,3.6-1.4c1.5,0,2.7,0.5,3.6,1.4c1.6,1.6,1.8,4.3,1.8,7.5S394.8,74.4,393.2,76z M439.1,53.1l-5,19.1l-6.3-19.1h-5.6 l-6.3,19.1l-5-19.1h-8.2l9.5,30.9h6.3l6.5-19.4l6.5,19.4h6.3l9.4-30.9H439.1z M369.2,74.7V41h-7.7v34.1c0,4.4,2.7,8.8,9,8.8h4.4 v-6.5h-3C370,77.4,369.2,76.5,369.2,74.7z M144.5,59l4-4h-8.2v-9.8H136V76c0,4.4,2.5,8,7.6,8h3.1v-3.7h-2.3c-2.8,0-4-1.6-4-4.3V59 H144.5z"/><polygon class="st1" points="87.6,91.3 87.6,69.3 95,69.3 95,98.6 29.1,98.6 29.1,69.3 36.4,69.3 36.4,91.3 "/><path class="st2" d="M44.5,67.3l35.9,7.5l1.5-7.2L46,60.1L44.5,67.3z M49.2,50.1l33.2,15.5l3.1-6.6L52.3,43.4L49.2,50.1z M58.4,33.8 l28.2,23.4l4.7-5.6L63.1,28.2L58.4,33.8z M76.6,16.5l-5.9,4.4l21.9,29.4l5.9-4.4L76.6,16.5z M43.7,83.9h36.6v-7.3H43.7 C43.7,76.6,43.7,83.9,43.7,83.9z"/></svg>
         </a>
       </li>
+      <li><!-- GitLab -->
+        <svg style="height: 42px" viewBox="0 0 1202 455" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch --><title>wm_no_bg</title><desc>Created with Sketch.</desc><defs><path id="path-1" d="M0,1173.3333 L1999.99995,1173.3333 L1999.99995,0 L0,0 L0,1173.3333 L0,1173.3333 Z"></path></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="gitlab_logo" sketch:type="MSLayerGroup" transform="translate(-439.000000, -360.000000)"><g id="g10" transform="translate(1000.000000, 587.333300) scale(1, -1) translate(-1000.000000, -587.333300) translate(0.000000, 0.333300)"><g id="g12" transform="translate(1316.014500, 505.244121)" fill="#8C929D" sketch:type="MSShapeGroup"><path d="M22.6666661,162.666663 L0.835999979,162.666663 L0.905333311,0.178666662 L89.2199978,0.178666662 L89.2199978,20.2719995 L22.7359994,20.2719995 L22.6666661,162.666663 L22.6666661,162.666663 Z" id="path14"></path></g><g id="g16"><g id="g18-Clipped"><mask id="mask-2" sketch:name="path22" fill="white"><use xlink:href="#path-1"></use></mask><g id="path22"></g><g id="g18" mask="url(#mask-2)"><g transform="translate(438.666658, 358.666658)"><g id="g24" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(977.327440, 143.284396)"><path d="M73.3333315,31.9999992 C67.8759983,26.294666 58.6973319,20.5879995 46.2933322,20.5879995 C29.6719993,20.5879995 22.9746661,28.7746659 22.9746661,39.4426657 C22.9746661,55.5666653 34.1373325,63.2573318 57.9533319,63.2573318 C62.4186651,63.2573318 69.6119983,62.7613318 73.3333315,62.0173318 L73.3333315,31.9999992 L73.3333315,31.9999992 Z M50.7586654,130.48533 C33.1293325,130.48533 16.9599996,124.235997 4.34266656,113.83333 L12.0586664,100.467997 C20.9893328,105.677331 31.9053325,110.887997 47.5333321,110.887997 C65.394665,110.887997 73.3333315,101.707997 73.3333315,86.3279978 L73.3333315,78.3893314 C69.8599983,79.1333314 62.6666651,79.6306647 58.2013319,79.6306647 C19.9973328,79.6306647 0.647999984,66.234665 0.647999984,38.2013324 C0.647999984,13.1466663 16.0279996,0.494666654 39.3466657,0.494666654 C55.0546653,0.494666654 70.1079982,7.68933314 75.3173315,19.3479995 L79.2866647,3.47199991 L94.6679976,3.47199991 L94.6679976,86.5759978 C94.6679976,112.871997 83.2559979,130.48533 50.7586654,130.48533 L50.7586654,130.48533 Z" id="path26" fill="#8C929D" sketch:type="MSShapeGroup"></path></g><g id="g28" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(1099.766904, 143.128930)"><path d="M42.6666656,19.9999995 C34.4799991,19.9999995 27.2853327,20.9919995 21.8279995,23.4733327 L21.8279995,90.8253311 L21.8279995,98.6386642 C29.2706659,104.841331 38.4493324,109.306664 50.1093321,109.306664 C71.1946649,109.306664 79.3813313,94.4226643 79.3813313,70.3586649 C79.3813313,36.1253324 66.2333317,19.9999995 42.6666656,19.9999995 M51.841332,130.64133 C32.3306659,130.64133 21.8279995,117.367997 21.8279995,117.367997 L21.8279995,138.330663 L21.7586661,166.114663 L11.9159997,166.114663 L0.425333323,166.114663 L0.494666654,7.59599981 C11.1613331,3.13066659 25.7973327,0.65066665 41.6746656,0.65066665 C82.3586646,0.65066665 101.955997,26.6973327 101.955997,71.5986649 C101.955997,107.073331 83.8426646,130.64133 51.841332,130.64133" id="path30" fill="#8C929D" sketch:type="MSShapeGroup"></path></g><g id="g32" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(584.042117, 143.630796)"><path d="M78.6666647,147.999996 C98.0159975,147.999996 110.419997,141.550663 118.606664,135.099997 L127.987997,151.350663 C115.20133,162.563996 98.0026642,168.590662 79.6586647,168.590662 C33.2693325,168.590662 0.771999981,140.30933 0.771999981,83.2533313 C0.771999981,23.4666661 35.8306658,0.147999996 75.9373314,0.147999996 C96.0319976,0.147999996 113.149331,4.86133321 124.311997,9.57466643 L123.854664,73.4533315 L123.854664,80.9893313 L123.854664,93.5479977 L64.3173317,93.5479977 L64.3173317,73.4533315 L102.271997,73.4533315 L102.729331,24.9559994 C97.7679976,22.4746661 89.0853311,20.4906662 77.4266647,20.4906662 C45.1773322,20.4906662 23.5946661,40.7773323 23.5946661,83.5013312 C23.5946661,126.91333 45.9213322,147.999996 78.6666647,147.999996" id="path34" fill="#8C929D" sketch:type="MSShapeGroup"></path></g><g id="g36" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(793.569045, 142.577463)"><path d="M22.6666661,166.666662 L1.33199997,166.666662 L1.4013333,139.378663 L1.4013333,128.214663 L1.4013333,121.707997 L1.4013333,110.353331 L1.4013333,45.3586655 L1.4013333,45.1106655 C1.4013333,18.8146662 12.813333,1.2013333 45.3106655,1.2013333 C49.7999988,1.2013333 54.193332,1.60933329 58.4586652,2.38399994 L58.4586652,21.5426661 C55.3706653,21.0693328 52.0746654,20.7999995 48.5359988,20.7999995 C30.6746659,20.7999995 22.7359994,29.9786659 22.7359994,45.3586655 L22.7359994,110.353331 L58.4586652,110.353331 L58.4586652,128.214663 L22.7359994,128.214663 L22.6666661,166.666662 L22.6666661,166.666662 Z" id="path38" fill="#8C929D" sketch:type="MSShapeGroup"></path></g><path d="M740.766646,146.755996 L762.101312,146.755996 L762.101312,270.793327 L740.766646,270.793327 L740.766646,146.755996 L740.766646,146.755996 Z" id="path40" fill="#8C929D" sketch:type="MSShapeGroup"></path><path d="M740.766646,287.909326 L762.101312,287.909326 L762.101312,309.243992 L740.766646,309.243992 L740.766646,287.909326 L740.766646,287.909326 Z" id="path42" fill="#8C929D" sketch:type="MSShapeGroup"></path><g id="g44" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(0.532000, 0.774933)"><path d="M491.999988,194.666662 L464.441322,279.481326 L409.82399,447.578655 C407.014656,456.226655 394.778657,456.226655 391.96799,447.578655 L337.349325,279.481326 L155.982663,279.481326 L101.362664,447.578655 C98.5533309,456.226655 86.3173312,456.226655 83.5066646,447.578655 L28.8893326,279.481326 L1.33199997,194.666662 C-1.18266664,186.930662 1.57199996,178.455996 8.1519998,173.674662 L246.665327,0.385333324 L485.179988,173.674662 C491.759988,178.455996 494.513321,186.930662 491.999988,194.666662" id="path46" fill="#FC6D26" sketch:type="MSShapeGroup"></path></g><g id="g48" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(155.197863, 1.160267)"><path d="M91.9999977,0 L91.9999977,0 L182.683995,279.095993 L1.31599997,279.095993 L91.9999977,0 L91.9999977,0 Z" id="path50" fill="#E24329" sketch:type="MSShapeGroup"></path></g><g id="g52" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(247.197860, 1.160267)"><g id="path54"></g></g><g id="g56" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(28.531199, 1.160800)"><path d="M218.666661,0 L127.982663,279.09466 L0.890666644,279.09466 L218.666661,0 L218.666661,0 Z" id="path58" fill="#FC6D26" sketch:type="MSShapeGroup"></path></g><g id="g60" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(247.197860, 1.160800)"><g id="path62"></g></g><g id="g64" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(0.088533, 0.255867)"><path d="M29.3333326,279.999993 L29.3333326,279.999993 L1.77466662,195.185328 C-0.738666648,187.449329 2.01466662,178.974662 8.59599979,174.194662 L247.109327,0.905333311 L29.3333326,279.999993 L29.3333326,279.999993 Z" id="path66" fill="#FCA326" sketch:type="MSShapeGroup"></path></g><g id="g68" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(247.197860, 1.160267)"><g id="path70"></g></g><g id="g72" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(29.421866, 280.255593)"><path d="M0,0 L127.091997,0 L72.4733315,168.097329 C69.6626649,176.746662 57.4266652,176.746662 54.617332,168.097329 L0,0 L0,0 Z" id="path74" fill="#E24329" sketch:type="MSShapeGroup"></path></g><g id="g76" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(247.197860, 1.160800)"><path d="M0,0 L90.6839977,279.09466 L217.775995,279.09466 L0,0 L0,0 Z" id="path78" fill="#FC6D26" sketch:type="MSShapeGroup"></path></g><g id="g80" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(246.307061, 0.255867)"><path d="M218.666661,279.999993 L218.666661,279.999993 L246.225327,195.185328 C248.73866,187.449329 245.985327,178.974662 239.403994,174.194662 L0.890666644,0.905333311 L218.666661,279.999993 L218.666661,279.999993 Z" id="path82" fill="#FCA326" sketch:type="MSShapeGroup"></path></g><g id="g84" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(336.973725, 280.255593)"><path d="M127.999997,0 L0.907999977,0 L55.5266653,168.097329 C58.3373319,176.746662 70.5733316,176.746662 73.3826648,168.097329 L127.999997,0 L127.999997,0 Z" id="path86" fill="#E24329" sketch:type="MSShapeGroup"></path></g></g></g></g></g></g></g></g></svg>
+      </li>
+      <li><!-- AWS -->
+        <!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
+        <svg style="height: 42px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 304 182" xml:space="preserve"><style type="text/css"> .awsst0{fill:#252F3E;} .awsst1{fill-rule:evenodd;clip-rule:evenodd;fill:#FF9900;} </style><g><path class="st0" d="M86.4,66.4c0,3.7,0.4,6.7,1.1,8.9c0.8,2.2,1.8,4.6,3.2,7.2c0.5,0.8,0.7,1.6,0.7,2.3c0,1-0.6,2-1.9,3l-6.3,4.2 c-0.9,0.6-1.8,0.9-2.6,0.9c-1,0-2-0.5-3-1.4C76.2,90,75,88.4,74,86.8c-1-1.7-2-3.6-3.1-5.9c-7.8,9.2-17.6,13.8-29.4,13.8 c-8.4,0-15.1-2.4-20-7.2c-4.9-4.8-7.4-11.2-7.4-19.2c0-8.5,3-15.4,9.1-20.6c6.1-5.2,14.2-7.8,24.5-7.8c3.4,0,6.9,0.3,10.6,0.8 c3.7,0.5,7.5,1.3,11.5,2.2v-7.3c0-7.6-1.6-12.9-4.7-16c-3.2-3.1-8.6-4.6-16.3-4.6c-3.5,0-7.1,0.4-10.8,1.3c-3.7,0.9-7.3,2-10.8,3.4 c-1.6,0.7-2.8,1.1-3.5,1.3c-0.7,0.2-1.2,0.3-1.6,0.3c-1.4,0-2.1-1-2.1-3.1v-4.9c0-1.6,0.2-2.8,0.7-3.5c0.5-0.7,1.4-1.4,2.8-2.1 c3.5-1.8,7.7-3.3,12.6-4.5c4.9-1.3,10.1-1.9,15.6-1.9c11.9,0,20.6,2.7,26.2,8.1c5.5,5.4,8.3,13.6,8.3,24.6V66.4z M45.8,81.6 c3.3,0,6.7-0.6,10.3-1.8c3.6-1.2,6.8-3.4,9.5-6.4c1.6-1.9,2.8-4,3.4-6.4c0.6-2.4,1-5.3,1-8.7v-4.2c-2.9-0.7-6-1.3-9.2-1.7 c-3.2-0.4-6.3-0.6-9.4-0.6c-6.7,0-11.6,1.3-14.9,4c-3.3,2.7-4.9,6.5-4.9,11.5c0,4.7,1.2,8.2,3.7,10.6 C37.7,80.4,41.2,81.6,45.8,81.6z M126.1,92.4c-1.8,0-3-0.3-3.8-1c-0.8-0.6-1.5-2-2.1-3.9L96.7,10.2c-0.6-2-0.9-3.3-0.9-4 c0-1.6,0.8-2.5,2.4-2.5h9.8c1.9,0,3.2,0.3,3.9,1c0.8,0.6,1.4,2,2,3.9l16.8,66.2l15.6-66.2c0.5-2,1.1-3.3,1.9-3.9c0.8-0.6,2.2-1,4-1 h8c1.9,0,3.2,0.3,4,1c0.8,0.6,1.5,2,1.9,3.9l15.8,67l17.3-67c0.6-2,1.3-3.3,2-3.9c0.8-0.6,2.1-1,3.9-1h9.3c1.6,0,2.5,0.8,2.5,2.5 c0,0.5-0.1,1-0.2,1.6c-0.1,0.6-0.3,1.4-0.7,2.5l-24.1,77.3c-0.6,2-1.3,3.3-2.1,3.9c-0.8,0.6-2.1,1-3.8,1h-8.6c-1.9,0-3.2-0.3-4-1 c-0.8-0.7-1.5-2-1.9-4L156,23l-15.4,64.4c-0.5,2-1.1,3.3-1.9,4c-0.8,0.7-2.2,1-4,1H126.1z M254.6,95.1c-5.2,0-10.4-0.6-15.4-1.8 c-5-1.2-8.9-2.5-11.5-4c-1.6-0.9-2.7-1.9-3.1-2.8c-0.4-0.9-0.6-1.9-0.6-2.8v-5.1c0-2.1,0.8-3.1,2.3-3.1c0.6,0,1.2,0.1,1.8,0.3 c0.6,0.2,1.5,0.6,2.5,1c3.4,1.5,7.1,2.7,11,3.5c4,0.8,7.9,1.2,11.9,1.2c6.3,0,11.2-1.1,14.6-3.3c3.4-2.2,5.2-5.4,5.2-9.5 c0-2.8-0.9-5.1-2.7-7c-1.8-1.9-5.2-3.6-10.1-5.2L246,52c-7.3-2.3-12.7-5.7-16-10.2c-3.3-4.4-5-9.3-5-14.5c0-4.2,0.9-7.9,2.7-11.1 c1.8-3.2,4.2-6,7.2-8.2c3-2.3,6.4-4,10.4-5.2c4-1.2,8.2-1.7,12.6-1.7c2.2,0,4.5,0.1,6.7,0.4c2.3,0.3,4.4,0.7,6.5,1.1 c2,0.5,3.9,1,5.7,1.6c1.8,0.6,3.2,1.2,4.2,1.8c1.4,0.8,2.4,1.6,3,2.5c0.6,0.8,0.9,1.9,0.9,3.3v4.7c0,2.1-0.8,3.2-2.3,3.2 c-0.8,0-2.1-0.4-3.8-1.2c-5.7-2.6-12.1-3.9-19.2-3.9c-5.7,0-10.2,0.9-13.3,2.8c-3.1,1.9-4.7,4.8-4.7,8.9c0,2.8,1,5.2,3,7.1 c2,1.9,5.7,3.8,11,5.5l14.2,4.5c7.2,2.3,12.4,5.5,15.5,9.6c3.1,4.1,4.6,8.8,4.6,14c0,4.3-0.9,8.2-2.6,11.6 c-1.8,3.4-4.2,6.4-7.3,8.8c-3.1,2.5-6.8,4.3-11.1,5.6C264.4,94.4,259.7,95.1,254.6,95.1z"/><g><path class="awsst1" d="M273.5,143.7c-32.9,24.3-80.7,37.2-121.8,37.2c-57.6,0-109.5-21.3-148.7-56.7c-3.1-2.8-0.3-6.6,3.4-4.4 c42.4,24.6,94.7,39.5,148.8,39.5c36.5,0,76.6-7.6,113.5-23.2C274.2,133.6,278.9,139.7,273.5,143.7z"/><path class="st1" d="M287.2,128.1c-4.2-5.4-27.8-2.6-38.5-1.3c-3.2,0.4-3.7-2.4-0.8-4.5c18.8-13.2,49.7-9.4,53.3-5 c3.6,4.5-1,35.4-18.6,50.2c-2.7,2.3-5.3,1.1-4.1-1.9C282.5,155.7,291.4,133.4,287.2,128.1z"/></g></g></svg>
+      </li>
+      <li>
+        <a href="https://www.meetup.com/members/133592252/">
+          <i class="fab fa-meetup fa-3x"></i>
+        </a>
+      </li>
+      <li>
+        <img style="height: 30px" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Office_365_2013.svg/320px-Office_365_2013.svg.png" alt="Logo Office 365 &copy; Microsoft" width="320" height="72">
+      </li>
+      <li><!-- PHP -->
+       <img style="height: 42px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/PHP_Logo%2C_text_only.svg/320px-PHP_Logo%2C_text_only.svg.png" alt="PHP-Logo">
+      </li>
+      <li><!-- HTML5 -->
+        <svg style="height: 84px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6"/><path fill="#e44d26" d="M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"/><path fill="#f16529" d="M256 480.5V131H404.3L376 447"/><path fill="#ebebeb" d="M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"/><path fill="#fff" d="M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"/></svg>
+      </li>
+      <li><!-- HTML5 -->
+        <img style="height: 84px" src="https://cdn.worldvectorlogo.com/logos/css-3.svg">
+      </li>
+      <li><!-- Node.js -->
+        <svg style="height: 63px" xmlns="http://www.w3.org/2000/svg" width="589.827" height="361.238" version="1.2" viewBox="0 0 442.37 270.929"><defs><clipPath id="a"><path d="M239.03 226.605l-42.13 24.317c-1.578.91-2.546 2.59-2.546 4.406v48.668c0 1.817.968 3.496 2.546 4.406l42.133 24.336c1.575.907 3.517.907 5.09 0l42.126-24.336c1.57-.91 2.54-2.59 2.54-4.406v-48.668c0-1.816-.97-3.496-2.55-4.406l-42.12-24.317c-.79-.453-1.67-.68-2.55-.68-.88 0-1.76.227-2.55.68"/></clipPath><linearGradient id="b" x1="-.348" x2="1.251" gradientTransform="rotate(116.114 53.1 202.97) scale(86.48)" gradientUnits="userSpaceOnUse"><stop offset=".3" stop-color="#3E863D"/><stop offset=".5" stop-color="#55934F"/><stop offset=".8" stop-color="#5AAD45"/></linearGradient><clipPath id="c"><path d="M195.398 307.086c.403.523.907.976 1.5 1.316l36.14 20.875 6.02 3.46c.9.52 1.926.74 2.934.665.336-.027.672-.09 1-.183l44.434-81.36c-.34-.37-.738-.68-1.184-.94l-27.586-15.93-14.582-8.39c-.414-.24-.863-.41-1.32-.53zm0 0"/></clipPath><linearGradient id="d" x1="-.456" x2=".582" gradientTransform="rotate(-36.46 550.846 -214.337) scale(132.798)" gradientUnits="userSpaceOnUse"><stop offset=".57" stop-color="#3E863D"/><stop offset=".72" stop-color="#619857"/><stop offset="1" stop-color="#76AC64"/></linearGradient><clipPath id="e"><path d="M241.066 225.953c-.707.07-1.398.29-2.035.652l-42.01 24.247 45.3 82.51c.63-.09 1.25-.3 1.81-.624l42.13-24.336c1.3-.754 2.19-2.03 2.46-3.476l-46.18-78.89c-.34-.067-.68-.102-1.03-.102-.14 0-.28.007-.42.02"/></clipPath><linearGradient id="f" x1=".043" x2=".984" gradientTransform="translate(192.862 279.652) scale(97.417)" gradientUnits="userSpaceOnUse"><stop offset=".16" stop-color="#6BBF47"/><stop offset=".38" stop-color="#79B461"/><stop offset=".47" stop-color="#75AC64"/><stop offset=".7" stop-color="#659E5A"/><stop offset=".9" stop-color="#3E863D"/></linearGradient></defs><path fill="#689f63" d="M218.647 270.93c-1.46 0-2.91-.383-4.19-1.12l-13.337-7.896c-1.992-1.114-1.02-1.508-.363-1.735 2.656-.93 3.195-1.14 6.03-2.75.298-.17.688-.11.993.07l10.246 6.08c.37.2.895.2 1.238 0l39.95-23.06c.37-.21.61-.64.61-1.08v-46.1c0-.46-.24-.87-.618-1.1l-39.934-23.04c-.37-.22-.86-.22-1.23 0l-39.926 23.04c-.387.22-.633.65-.633 1.09v46.1c0 .44.24.86.62 1.07l10.94 6.32c5.94 2.97 9.57-.53 9.57-4.05v-45.5c0-.65.51-1.15 1.16-1.15h5.06c.63 0 1.15.5 1.15 1.15v45.52c0 7.92-4.32 12.47-11.83 12.47-2.31 0-4.13 0-9.21-2.5l-10.48-6.04c-2.59-1.5-4.19-4.3-4.19-7.29v-46.1c0-3 1.6-5.8 4.19-7.28l39.99-23.07c2.53-1.43 5.89-1.43 8.4 0l39.94 23.08c2.58 1.49 4.19 4.28 4.19 7.28v46.1c0 2.99-1.61 5.78-4.19 7.28l-39.94 23.07c-1.28.74-2.73 1.12-4.21 1.12"/><path fill="#689f63" d="M230.987 239.164c-17.48 0-21.145-8.024-21.145-14.754 0-.64.516-1.15 1.157-1.15h5.16c.57 0 1.05.415 1.14.978.78 5.258 3.1 7.91 13.67 7.91 8.42 0 12-1.902 12-6.367 0-2.57-1.02-4.48-14.1-5.76-10.94-1.08-17.7-3.49-17.7-12.24 0-8.06 6.8-12.86 18.19-12.86 12.79 0 19.13 4.44 19.93 13.98.03.33-.09.65-.31.89-.22.23-.53.37-.85.37h-5.19c-.54 0-1.01-.38-1.12-.9-1.25-5.53-4.27-7.3-12.48-7.3-9.19 0-10.26 3.2-10.26 5.6 0 2.91 1.26 3.76 13.66 5.4 12.28 1.63 18.11 3.93 18.11 12.56 0 8.7-7.26 13.69-19.92 13.69m48.66-48.89h1.34c1.1 0 1.31-.77 1.31-1.22 0-1.18-.81-1.18-1.26-1.18h-1.38zm-1.63-3.78h2.97c1.02 0 3.02 0 3.02 2.28 0 1.59-1.02 1.92-1.63 2.12 1.19.08 1.27.86 1.43 1.96.08.69.21 1.88.45 2.28h-1.83c-.05-.4-.33-2.6-.33-2.72-.12-.49-.29-.73-.9-.73h-1.51v3.46h-1.67zm-3.57 4.3c0 3.58 2.89 6.48 6.44 6.48 3.58 0 6.47-2.96 6.47-6.48 0-3.59-2.93-6.44-6.48-6.44-3.5 0-6.44 2.81-6.44 6.43m14.16.03c0 4.24-3.47 7.7-7.7 7.7-4.2 0-7.7-3.42-7.7-7.7 0-4.36 3.58-7.7 7.7-7.7 4.15 0 7.69 3.35 7.69 7.7"/><path fill="#333" fill-rule="evenodd" d="M94.936 90.55c0-1.84-.97-3.53-2.558-4.445l-42.356-24.37c-.715-.42-1.516-.64-2.328-.67h-.438c-.812.03-1.613.25-2.34.67L2.562 86.105C.984 87.025 0 88.715 0 90.555l.093 65.64c0 .91.47 1.76 1.27 2.21.78.48 1.76.48 2.54 0l25.18-14.42c1.59-.946 2.56-2.618 2.56-4.44V108.88c0-1.83.97-3.52 2.555-4.43l10.72-6.174c.796-.46 1.67-.688 2.56-.688.876 0 1.77.226 2.544.687l10.715 6.172c1.586.91 2.56 2.6 2.56 4.43v30.663c0 1.82.983 3.5 2.565 4.44l25.164 14.41c.79.47 1.773.47 2.56 0 .776-.45 1.268-1.3 1.268-2.21zm199.868 34.176c0 .457-.243.88-.64 1.106l-14.548 8.386c-.395.227-.883.227-1.277 0l-14.55-8.386c-.4-.227-.64-.65-.64-1.106V107.93c0-.458.24-.88.63-1.11l14.54-8.4c.4-.23.89-.23 1.29 0l14.55 8.4c.4.23.64.652.64 1.11zM298.734.324c-.794-.442-1.76-.43-2.544.027-.78.46-1.262 1.3-1.262 2.21v65c0 .64-.34 1.23-.894 1.55-.55.32-1.235.32-1.79 0L281.634 63c-1.58-.914-3.526-.914-5.112 0l-42.37 24.453c-1.583.91-2.56 2.6-2.56 4.42v48.92c0 1.83.977 3.51 2.56 4.43l42.37 24.47c1.582.91 3.53.91 5.117 0l42.37-24.48c1.58-.92 2.56-2.6 2.56-4.43V18.863c0-1.856-1.01-3.563-2.63-4.47zm141.093 107.164c1.574-.914 2.543-2.602 2.543-4.422V91.21c0-1.824-.97-3.507-2.547-4.425l-42.1-24.44c-1.59-.92-3.54-.92-5.13 0l-42.36 24.45c-1.59.92-2.56 2.6-2.56 4.43v48.9c0 1.84.99 3.54 2.58 4.45l42.09 23.99c1.55.89 3.45.9 5.02.03l25.46-14.15c.8-.45 1.31-1.3 1.31-2.22 0-.92-.49-1.78-1.29-2.23l-42.62-24.46c-.8-.45-1.29-1.3-1.29-2.21v-15.34c0-.916.48-1.76 1.28-2.216l13.26-7.65c.79-.46 1.76-.46 2.55 0l13.27 7.65c.79.45 1.28 1.3 1.28 2.21v12.06c0 .91.49 1.76 1.28 2.22.79.45 1.77.45 2.56-.01zm0 0"/><path fill="#689f63" fill-rule="evenodd" d="M394.538 105.2c.3-.177.676-.177.98 0l8.13 4.69c.304.176.49.5.49.85v9.39c0 .35-.186.674-.49.85l-8.13 4.69c-.304.177-.68.177-.98 0l-8.125-4.69c-.31-.176-.5-.5-.5-.85v-9.39c0-.35.18-.674.49-.85zm0 0"/><g clip-path="url(#a)" transform="translate(-78.306 -164.016)"><path fill="url(#b)" d="M331.363 246.793l-118.715-58.19-60.87 124.174L270.49 370.97zm0 0"/></g><g clip-path="url(#c)" transform="translate(-78.306 -164.016)"><path fill="url(#d)" d="M144.07 264.004l83.825 113.453 110.86-81.906-83.83-113.45zm0 0"/></g><g clip-path="url(#e)" transform="translate(-78.306 -164.016)"><path fill="url(#f)" d="M197.02 225.934v107.43h91.683v-107.43zm0 0"/></g></svg>
+      </li>
     </ul>
   </section>
 
@@ -245,7 +288,7 @@
       <dt>seit 03/2015</dt>
       <dd><h4>NETFORMIC GmbH <small>(Internet, e&#x2011;Commerce)</small></h4>
           »Senior Software Developer«, »IT-Consultant«, »Technical Lead«.
-          Umsetzung SaaS-Produkte, Design von
+          Agile/Scrum-weise Umsetzung SaaS-Produktportfolio, Design von
           HTTP-APIs, technische Qualitätssicherung
       </dd>
 
@@ -273,7 +316,7 @@
     <h2>Weiterbildung und zusätzliche Qualifikationen</h2>
 
     <ul>
-      <li>iSAQB® Certified Professional forSoftware Architecture <small>Foundation Level – seit&nbsp;2017</small></li>
+      <li>iSAQB® Certified Professional for Software Architecture <small>Foundation Level – seit&nbsp;2017</small></li>
       <li>ICAO Language Profciency English Level 4 <small>seit 2012</small></li>
       <li>TYPO3 Certifed Integrator (4.x) <small>seit 2010</small></li>
       <li>Zend Certifed Engineer <small>seit 2010</small></li>
@@ -284,6 +327,9 @@
     <h2>Sonstige Qualifikationen und Kenntnisse sowie Freizeitaktivitäten</h2>
 
     <ul>
+      <li>Core-Team-Member und
+        <a href="https://github.com/neos/flow-development-collection/graphs/contributors">Active Contributor</a> des
+        Open-Source Web-Anwendungs-Frameworks „Neos“ (vormals „TYPO3 Flow“)</li>
       <li>Inhaber Privatpilotenlizenz PPL(A) für einmotorige Propellerfugzeuge</li>
       <li>Inhaber Allgemeines Sprechfunkzeugnis für den Flugfunkdienst (AZF)</li>
       <li>Interesse für Lebensmittelzubereitung, Fotografe, Filme und Serien, Wissenschaft und Technik</li>
@@ -429,7 +475,14 @@
   <small>Credits:
     <a href="https://www.atlassian.com/company/news/press-kit">Atlassian-Logos</a>,
     <a href="https://www.jetbrains.com/company/press/#product-logos">PhpStorm (JetBrains) - Logo</a>,
-    <a href="https://about.twitter.com/en_us/company/brand-resources.html">Twitter-Logo</a>
+    <a href="https://about.twitter.com/en_us/company/brand-resources.html">Twitter-Logo</a>,
+    <a href="https://about.gitlab.com/press/">GitLab-Logo</a>,
+    <a href="https://commons.wikimedia.org/wiki/File:Amazon_Web_Services_Logo.svg">AWS-Logo</a>,
+    <a href="https://en.wikipedia.org/wiki/File:Office_365_2013.svg">Office 365 – Logo &copy; Microsoft</a>,
+    <a href="https://commons.wikimedia.org/wiki/File:Node.js_logo.svg">Node.js-Logo</a>,
+    <a href="https://commons.wikimedia.org/wiki/File:PHP_Logo,_text_only.svg">PHP-Logo</a>,
+    <a href="https://commons.wikimedia.org/wiki/File:HTML5_logo_and_wordmark.svg">HTML5-Logo</a>,
+    <a href="https://worldvectorlogo.com/logo/css-3">CSS3-Logo</a>,
   </small>
 </footer>
 
