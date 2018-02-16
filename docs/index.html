@@ -135,6 +135,12 @@
         clear: left;
       }
     }
+    body > main > section {
+      margin-bottom: 4rem;
+    }
+    body > footer {
+      border-top: 1px inset;
+    }
 
     @keyframes shake {
       10%, 90% {
@@ -172,7 +178,8 @@
   <p>Software-Architekt. Von schneller Auffassungsgabe, mit Blick fürs&nbsp;Detail wie fürs&nbsp;Große&nbsp;Ganze.</p>
   <blockquote>Einfach halten!</blockquote>
   <p>Seit 6 vor der Tastatur,
-    <a href="https://web.archive.org/web/19990821063307/http://www.gbg.wn.schule-bw.de:80/ag_onlin.htm">gestalte das Web seit Ende der 90er</a>.</p>
+    <a href="https://web.archive.org/web/19990821063307/http://www.gbg.wn.schule-bw.de:80/ag_onlin.htm">gestalte das Web
+      seit Ende der 90er</a>.</p>
   <p>Ich bin häufiger und aktiver Open-Source-Contributor
     <a href="https://github.com/afoeder"><i class="fab fa-github-square"></i></a>
     und stets mit dem Ohr am Gleis der technischen Entwicklung.</p>
@@ -183,7 +190,11 @@
   <p>Ich weiß, wie <a href="https://tools.ietf.org/html/rfc7230">HTTP funktioniert</a> und habe eine tiefsitzende
     Zuneigung zu ISO-Standards, allen voran <a href="https://de.wikipedia.org/wiki/ISO_8601">ISO 8601</a>.</p>
   <blockquote><a href="https://martinfowler.com/articles/serverless.html">Serverless</a> ist der neue Shit!</blockquote>
-  <p>☕️</p>
+  <p>☕️.</p>
+  <p>Ich arbeite seit Jahren ausschließlich mit PHP, finde aber mittlerweile, dass die Sprache keine Rolle spielt:
+    es geht um Verständnis, Gliederung und Wartbarkeit. Man gebe mir drei Wochen und ich bin fit in etwas Neuem. Meine
+    <a href="#exlibris"><i class="fas fa-long-arrow-alt-down"></i> Bibliothek</a> beinhaltet keine Programmiersprachen,
+    sondern Design-Patterns und Denkansätze.</p>
 
   <section>
 
@@ -472,6 +483,18 @@
 </main>
 
 <footer>
+  <h2>Über diese Seite</h2>
+  <p>Ich bin kein Designer. Ich bin Techniker und mag es raw, lean, und strebe semantische Perfektion an. Daher sind hier
+    möglichst viel HTML-Elemente selbst und möglichst wenig CSS-Klassennamen zum Einsatz gekommen.</p>
+  <p>Ich habe bewusst auf ein CSS-Framework (ich bin von der Zurb-Foundation-Fraktion, Bootstrap mag ich nicht) verzichtet
+    und Good Ole HTML benutzt: es ist von Natur aus responsive/adaptive! Zur besseren Lesbarkeit habe ich die Maximalbreite
+    des Inhalts auf 640px gesetzt, Mobilgeräte sind ggf. dann noch etwas schmaler. Auch ist alles in-line definiert
+    (SVGs, die Styles, …): so ist es nur eine einzige Datei die funktioniert as-is.</p>
+  <p>Die Seite ist statisch über <a href="https://github.com/afoeder/me">GitHub gehostet</a> und über
+    <a href="https://www.cloudflare.com/">CloudFlare</a> weiterserviert. Alles fürlau. Meiner Meinung
+    nach „gehört statischen Seiten die Zukunft“.</p>
+
+  <hr>
   <small>Credits:
     <a href="https://www.atlassian.com/company/news/press-kit">Atlassian-Logos</a>,
     <a href="https://www.jetbrains.com/company/press/#product-logos">PhpStorm (JetBrains) - Logo</a>,
