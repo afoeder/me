@@ -107,6 +107,16 @@
     section#exlibris h2 small::before {
       content: "— ";
     }
+    section#exlibris h4 small {
+      font-size: x-small;
+      white-space: nowrap;
+    }
+    section#exlibris h4 small::before {
+      content: "(";
+    }
+    section#exlibris h4 small::after {
+      content: ")";
+    }
     section#exlibris ul {
       margin: 0; padding: 0; overflow: hidden;
     }
@@ -173,6 +183,8 @@
 <body itemscope itemtype="http://schema.org/WebPage">
 
 <main itemprop="mainEntity" itemscope itemtype="http://schema.org/Person">
+
+  <img src="me.jpg" width="650" height="650" alt="Portraitfoto von mir" style="float:right;width:40%; margin-left: 1rem;height:auto">
 
   <h1>It's me, <em>afoeder</em>.</h1>
   <p>Software-Architekt. Von schneller Auffassungsgabe, mit Blick fürs&nbsp;Detail wie fürs&nbsp;Große&nbsp;Ganze.</p>
@@ -365,6 +377,21 @@
       nennenswert geprägt haben. Die Reihenfolge ist frei heraus wie sie mir eingefallen ist.</p>
 
     <ul>
+
+      <li itemscope itemtype="http://schema.org/Book">
+        <figure>
+          <img src="https://books.google.com/books/content?id=ka2VUBqHiWkC&printsec=frontcover&img=1&zoom=1" alt="Cover-Foto" width="128">
+          <footer>
+            <small>Bild:
+              <a itemprop="sameAs" href="https://books.google.de/books?id=ka2VUBqHiWkC&hl=de&num=10">Google Books</a>
+            </small>
+          </footer>
+        </figure>
+
+        <h4 itemprop="name">Effective Java <small>Third Edition</small></h4>
+        von <span itemprop="author">Joshua Bloch</span>
+      </li>
+
       <li itemscope itemtype="http://schema.org/Book">
         <figure>
           <img src="https://books.google.com/books/content?id=xColAAPGubgC&printsec=frontcover&img=1&zoom=1" alt="Cover-Foto" width="128">
@@ -377,7 +404,6 @@
 
         <h4 itemprop="name">Domain-Driven Design</h4>
         von <span itemprop="author">Eric Evans</span>
-
       </li>
 
       <li itemscope itemtype="http://schema.org/Book">
